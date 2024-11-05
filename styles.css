@@ -9,7 +9,7 @@
 
 :root {
     --primary-color-rust: #b5563a;
-    --tertiary-color-terracotta: #e07a5f;
+    --tertiary-color: #1d0200;
     --secondary-color-sand: #f4e1d2;
     --white-color: #ffffff;
     --teal-color: #3a6b6f;
@@ -31,18 +31,17 @@ button {
     cursor: pointer;
 }
 
-img {
-    width: 100%;
-}
-
 .section-content {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 1200px;
 }
 
-/* navbar styles */
+/* navbar section styles */
 header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
     background-color: var(--primary-color-rust);
 }
 
@@ -71,7 +70,73 @@ header {
 }
 
 .navbar .nav-menu .nav-link:hover {
-    background: var(--secondary-color-sand);
-    color: #1d0200;
+    color: var(--secondary-color-sand);
+    background-color: var(--tertiary-color);
 }
 
+/* hero section styles */
+.hero-section {
+    background-color: var(--primary-color-rust);
+    min-height: 100vh;
+}
+
+.hero-section .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    color: var(--white-color);
+}
+
+.hero-section .hero-details .title {
+    font-family: "Pacifico", sans-serif;
+    font-size: 30px;
+    color: var(--tertiary-color);
+}
+
+.hero-section .hero-details .subtitle {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.hero-section .hero-details .description {
+    max-width: 90%;
+    margin: 24px 0 40px;
+    font-size: 14px;
+    line-height: 2em;
+}
+
+.hero-section .hero-details .hero-buttons {
+    display: flex;
+    gap: 25px;
+}
+
+.hero-section .hero-details .button {
+    padding: 10px 20px;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color-rust);
+    border-radius: 30px;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: 0.3s ease;
+    font-size: 12px;
+}
+
+.hero-section .hero-details .button:hover,
+.hero-section .hero-details .contact-us {
+    color: var(--white-color);
+    border-color: var(--secondary-color-sand);
+    background: transparent;
+}
+
+.hero-section .hero-details .contact-us:hover {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color-rust);
+    border: var(--secondary-color-sand);
+}
+
+.hero-section .hero-details .hero-image-wrapper {
+    max-width: 500px;
+    margin-right: 30px;
+}
