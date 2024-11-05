@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary-color-rust: #b5563a;
+    --tertiary-color-terracotta: #e07a5f;
+    --secondary-color-sand: #f4e1d2;
+    --white-color: #ffffff;
+    --teal-color: #3a6b6f;
+    --turquoise-accent: #5eaaa8;
+}
+
+/* general styles */
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+}
+
+.section-content {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+}
+
+/* navbar styles */
+header {
+    background-color: var(--primary-color-rust);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.navbar .logo {
+    height: 100px;
+}
+
+.navbar .nav-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .nav-menu .nav-link {
+    color: var(--white-color);
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 12px;
+    transition: 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover {
+    background: var(--secondary-color-sand);
+    color: #1d0200;
+}
+
