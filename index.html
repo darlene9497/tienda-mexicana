@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>Tienda Mexicana</title>
 </head>
 <body>
@@ -15,6 +16,7 @@
                 <img src="./assets/logo.png" alt="Logo" class="logo">
             </a>
             <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Home</a>
                 </li>
@@ -34,6 +36,7 @@
                     <a href="#" class="nav-link">Contact</a>
                 </li>
             </ul>
+            <button id="menu-open-button" class="fas fa-bars"></button>
         </nav>
     </header>
     <main>
@@ -50,10 +53,11 @@
                 </div>
             </div>
             <div class="hero-image-wrapper">
-                <img src="./assets//heroimg.png" alt="hero">
+                <img src="./assets//heroimg.png" alt="hero" class="hero-img">
             </div>
         </div>
      </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

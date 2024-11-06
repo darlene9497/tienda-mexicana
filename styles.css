@@ -74,6 +74,14 @@ header {
     background-color: var(--tertiary-color);
 }
 
+.navbar .nav-menu #menu-close-button {
+    display: none;
+}
+
+.navbar #menu-open-button {
+    display: none;
+}
+
 /* hero section styles */
 .hero-section {
     background-color: var(--primary-color-rust);
@@ -136,7 +144,105 @@ header {
     border: var(--secondary-color-sand);
 }
 
-.hero-section .hero-details .hero-image-wrapper {
-    max-width: 500px;
+/* .hero-section .hero-image-wrapper {
     margin-right: 30px;
+}
+
+.hero-section .hero-image-wrapper .hero-img {
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+} */
+
+@media screen and (max-width: 900px) {
+    body.menu-open header::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar :where(#menu-close-button, #menu-open-button) {
+        font-size: 22px;
+        border: none;
+        background: none;
+        color: var(--tertiary-color);
+    }
+
+    .navbar .nav-menu #menu-close-button {
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .navbar #menu-open-button {
+        color: var(--white-color);
+        display: block;
+    }
+
+    .navbar .nav-menu {
+        display: block;
+        position: fixed;
+        left: -300px;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        background: var(--white-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+        transition: left 0.2s ease;
+    }
+
+    body.menu-open .navbar .nav-menu {
+        left: 0;
+    }
+
+    .navbar .nav-menu .nav-link {
+        color: var(--tertiary-color);
+        font-size: 1em;
+        display: block;
+    }
+
+    .hero-section .section-content {
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        gap: 50px;
+        padding: 120px 20px 20px;
+    }
+
+    .hero-section .hero-details .title {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .hero-section .hero-details .subtitle {
+        font-size: 18px;
+    }
+
+    .hero-section .hero-details .description {
+        max-width: 100%;
+        font-size: 12px;
+    }
+
+    .hero-section .hero-details .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-section .hero-image-wrapper {
+        min-width: 270px;
+        margin-right: 0;
+    }
+
+    .hero-section .hero-image-wrapper .hero-img {
+        width: 250px;
+        height: 280px;
+    }
 }
