@@ -37,6 +37,23 @@ button {
     max-width: 1200px;
 }
 
+.section-title {
+    text-align: center;
+    padding: 60px 0 100px;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 5px;
+    background-color: var(--primary-color-rust);
+    margin: 20px auto 0;
+    border-radius: 50px;
+}
+
 /* navbar section styles */
 header {
     position: fixed;
@@ -153,6 +170,58 @@ header {
     height: 450px;
     object-fit: cover;
 } */
+
+
+/* about section styles */
+.about-section {
+    background-color: var(--secondary-color-sand);
+    padding: 80px 0;
+}
+
+.about-section .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-section .about-image-wrapper .about-img {
+    width: 400px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 50%;
+    gap: 50px;
+}
+
+.about-section .about-details {
+    max-width: 600px;
+}
+
+.about-section .about-details .section-title {
+    padding: 0;
+}
+
+.about-section .about-details .about-description {
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.about-section .social-link-list {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.about-section .social-link-list .social-link {
+    color: var(--primary-color-rust);
+    font-size: 24px;
+    transition: 0.2s ease;
+}
+
+.about-section .social-link-list .social-link:hover {
+    color: var(--tertiary-color);
+}
 
 @media screen and (max-width: 900px) {
     body.menu-open header::before {
