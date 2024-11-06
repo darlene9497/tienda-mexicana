@@ -314,4 +314,20 @@ header {
         width: 250px;
         height: 280px;
     }
+
+    .about-section .section-content {
+        gap: 50px;
+        flex-direction: column-reverse;
+    }
+
+    .about-section .about-image-wrapper .about-img {
+        width: 100%;
+        height: 100%;
+        max-width: 250px;
+        aspect-ratio: 1;
+    }
+
+    .about-section .social-link-list .social-link {
+        font-size: 18px;
+    }
 }
