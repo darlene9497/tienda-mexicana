@@ -129,7 +129,7 @@ header {
     max-width: 90%;
     margin: 24px 0 40px;
     font-size: 14px;
-    line-height: 2em;
+    line-height: 2;
 }
 
 .hero-section .hero-details .hero-buttons {
@@ -161,15 +161,15 @@ header {
     border: var(--secondary-color-sand);
 }
 
-/* .hero-section .hero-image-wrapper {
+.hero-section .hero-image-wrapper {
     margin-right: 30px;
 }
 
 .hero-section .hero-image-wrapper .hero-img {
     width: 400px;
-    height: 450px;
-    object-fit: cover;
-} */
+    height: 420px;
+    object-fit: contain;
+}
 
 
 /* about section styles */
@@ -201,7 +201,7 @@ header {
 }
 
 .about-section .about-details .about-description {
-    line-height: 30px;
+    line-height: 2;
     margin: 50px 0 30px;
     text-align: center;
     font-size: 14px;
@@ -221,6 +221,64 @@ header {
 
 .about-section .social-link-list .social-link:hover {
     color: var(--tertiary-color);
+}
+
+/* menu section styles */
+.menu-section {
+    background: var(--tertiary-color);
+    color: var(--secondary-color-sand);
+    padding: 20px 0 100px;
+}
+
+.menu-section .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-section .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 110px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-section .menu-list .menu-item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% / 3 - 110px);
+}
+
+.menu-section .menu-list .name {
+    margin: 12px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.menu-section .menu-list .menu-item .text {
+    font-size: 14px;
+    line-height: 2;
+}
+
+.menu-section .menu-list .menu-item .menu-img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+    .menu-section .menu-list {
+        gap: 60px;
+    }
+
+    .menu-section .menu-list .menu-item {
+        width: calc(100% / 3 - 60px);
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -329,5 +387,28 @@ header {
 
     .about-section .social-link-list .social-link {
         font-size: 18px;
+    }
+
+    .menu-section .menu-list {
+        gap: 30px;
+    }
+
+    .menu-section .menu-list .menu-item {
+        width: calc(100% / 2 - 30px);
+    }
+
+    .menu-section .menu-list .menu-item .menu-img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .menu-section .menu-list {
+        gap: 60px;
+    }
+
+    .menu-section .menu-list .menu-item {
+        width: 100%;
     }
 }
