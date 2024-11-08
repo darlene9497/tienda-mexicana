@@ -271,6 +271,60 @@ header {
     margin-bottom: 15px;
 }
 
+/* testimonials section styles */
+.testimonials-section {
+    padding: 20px 0 100px;
+    background: var(--secondary-color-sand);
+}
+
+.testimonials-section .slider-wrapper {
+    overflow: hidden;
+    margin: 0 60px 50px;
+}
+
+.testimonials-section .testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+}
+
+.testimonials-section .testimonial .user-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonials-section .testimonial .name {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.testimonials-section .testimonial .feedback {
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+.testimonials-section .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background: var(--primary-color-rust);
+    opacity: 1;
+}
+
+.testimonials-section .swiper-slide-button {
+    color: var(--primary-color-rust);
+    transition: 0.3s ease;
+}
+
+.testimonials-section .swiper-slide-button:hover {
+    color: var(--tertiary-color);
+}
+
 @media screen and (max-width: 1024px) {
     .menu-section .menu-list {
         gap: 60px;
