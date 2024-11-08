@@ -306,7 +306,6 @@ header {
 .testimonials-section .testimonial .feedback {
     font-size: 14px;
     line-height: 2;
-    margin-bottom: 30px;
 }
 
 .testimonials-section .swiper-pagination-bullet {
@@ -464,5 +463,13 @@ header {
 
     .menu-section .menu-list .menu-item {
         width: 100%;
+    }
+
+    .testimonials-section .slider-wrapper {
+        margin: 0 0 30px;
+    }
+
+    .testimonials-section .swiper-slide-button {
+        display: none;
     }
 }
