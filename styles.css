@@ -482,6 +482,14 @@ header {
         width: 150px;
         height: 150px;
     }
+
+    .gallery-section .gallery-list {
+        gap: 30px;
+    }
+
+    .gallery-section .gallery-list .gallery-item {
+        width: calc(100% / 2 - 30px);
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -489,7 +497,8 @@ header {
         gap: 60px;
     }
 
-    .menu-section .menu-list .menu-item {
+    .menu-section .menu-list .menu-item,
+    .gallery-section .gallery-list .gallery-item {
         width: 100%;
     }
 
