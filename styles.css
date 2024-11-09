@@ -16,6 +16,11 @@
     --turquoise-accent: #5eaaa8;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
 /* general styles */
 ul {
     list-style-type: none;
@@ -288,6 +293,7 @@ header {
     align-items: center;
     padding: 15px;
     text-align: center;
+    user-select: none;
 }
 
 .testimonials-section .testimonial .user-img {
