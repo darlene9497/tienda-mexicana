@@ -425,6 +425,63 @@ header {
     color: var(--tertiary-color);
 }
 
+/* footer styles */
+.footer-section {
+    background-color: var(--primary-color-rust);
+    color: var(--tertiary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-section .section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-section .section-content .copyright-text,
+.footer-section .section-content .made-text {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.footer-section .section-content .social-link-list {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.footer-section .section-content .social-link-list .social-link {
+    color: var(--tertiary-color);
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.footer-section .section-content .social-link-list .social-link:hover {
+    color: var(--secondary-color-sand);
+}
+
+.footer-section .section-content .policy-text {
+    font-size: 12px;
+    margin-top: 15px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.footer-section .section-content .policy-text a {
+    color: var(--tertiary-color);
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.footer-section .section-content .policy-text a:hover {
+    color: var(--secondary-color-sand);
+}
+
+/* responsive design */
 @media screen and (max-width: 1024px) {
     .menu-section .menu-list {
         gap: 60px;
@@ -575,6 +632,10 @@ header {
 }
 
 @media screen and (max-width: 640px) {
+    .section-title {
+        padding: 50px 0;
+    }
+    
     .menu-section .menu-list {
         gap: 60px;
     }
@@ -590,5 +651,22 @@ header {
 
     .testimonials-section .swiper-slide-button {
         display: none;
+    }
+
+    .contact-section, 
+    .testimonials-section, 
+    .gallery-section,
+    .menu-section,
+    .about-section {
+        padding-top: 0;
+    }
+
+    .contact-section, 
+    .testimonials-section, 
+    .gallery-section,
+    .menu-section,
+    .about-section,
+    .hero-section {
+        padding-bottom: 50px;
     }
 }
