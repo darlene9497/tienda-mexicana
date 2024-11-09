@@ -404,6 +404,7 @@ header {
     padding: 12px;
     width: 100%;
     resize: vertical;
+    border: 1px solid var(--tertiary-color);
 }
 
 .contact-section .contact-form .submit-button {
@@ -561,6 +562,15 @@ header {
 
     .gallery-section .gallery-list .gallery-item {
         width: calc(100% / 2 - 30px);
+    }
+
+    .contact-section .section-content {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .contact-section .contact-form {
+        max-width: 100%;
     }
 }
 
