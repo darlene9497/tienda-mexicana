@@ -9,37 +9,8 @@
     <title>Tienda Mexicana</title>
 </head>
 <body>
-    <!-- navbar section -->
-    <header>
-        <nav class="navbar section-content">
-            <a href="#">
-                <!-- <h2 class="logo-text">🌮 Tienda Mexicana</h2> -->
-                <img src="./assets/logo.png" alt="Logo" class="logo">
-            </a>
-            <ul class="nav-menu">
-                <button id="menu-close-button" class="fas fa-times"></button>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#menu" class="nav-link">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#testimonials" class="nav-link">Testimonials</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#gallery" class="nav-link">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <button id="menu-open-button" class="fas fa-bars"></button>
-        </nav>
-    </header>
+    <!-- navbar placeholder -->
+    <div id="navbar-placeholder"></div>
     <main>
     <!-- hero section -->
         <section class="hero-section">
@@ -84,9 +55,11 @@
             <div class="section-content">
                 <ul class="menu-list">
                     <li class="menu-item">
-                        <img src="./assets/soupMenu.png" alt="" class="menu-img">
-                        <h3 class="name">Soups & Stews</h3>
-                        <p class="text">Hearty, flavorful soups and stews like pozole and menudo, made with tender meats, fresh herbs, and rich broths—comfort food at its finest.</p>
+                        <a href="/soups.html">
+                            <img src="./assets/soupMenu.png" alt="" class="menu-img">
+                            <h3 class="name">Soups & Stews</h3>
+                            <p class="text">Hearty, flavorful soups and stews like pozole and menudo, made with tender meats, fresh herbs, and rich broths—comfort food at its finest.</p>
+                        </a>
                     </li>
                     <li class="menu-item">
                         <img src="./assets/fajitaMenu.png" alt="" class="menu-img">
@@ -222,35 +195,12 @@
                 </form>
             </div>
         </section>
-    <!-- footer section -->
-        <footer class="footer-section">
-            <div class="section-content">
-                <p class="copyright-text">© Tienda Mexicana 2024</p>
-                <p class="made-text">Made with 🤍</p>
-                <div class="social-link-list">
-                    <a href="#" class="social-link"><i class="fab fa-facebook-square"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-x-twitter"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram-square"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-youtube-square"></i></a>
-                </div>
-                <p class="policy-text">
-                    <a href="#">Privacy Policy</a> |
-                    <a href="#">Terms & Conditions</a> |
-                    <a href="#">Cookie Policy</a> |
-                    <a href="#">Sitemap</a> |
-                    <a href="#contact">Contact Us</a> |
-                    <a href="#">Help</a> |
-                    <a href="#">FAQs</a> |
-                    <a href="#about">About Us</a> |
-                    <a href="#">Careers</a> |
-                    <a href="#">Blog</a> |
-                    <a href="#gallery">Gallery</a> |
-                    <a href="#">Press</a> 
-                </p>
-            </div>
-        </footer>
     </main>
+    <!-- footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script src="loadComponent.js"></script>
 </body>
 </html>

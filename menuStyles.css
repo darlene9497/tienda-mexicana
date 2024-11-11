@@ -1,0 +1,147 @@
+:root {
+    --primary-color-rust: #b5563a;
+    --tertiary-color: #1d0200;
+    --secondary-color-sand: #f4e1d2;
+    --white-color: #ffffff;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Pacifico", sans-serif;
+    text-transform: uppercase;
+    margin: 50px 0;
+    color: var(--tertiary-color);
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: var(--primary-color-rust);
+    margin: 20px auto 0;
+    border-radius: 50px;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color-rust);
+    color: var(--white-color);
+    text-decoration: none;
+    border-radius: 50%;
+    position: relative;
+    transform: translate(20px, 40px);
+}
+
+.back-link i {
+    font-size: 18px;
+}
+
+.back-link:hover {
+    background-color: var(--tertiary-color);
+    color: var(--white-color);
+}
+
+
+/* soup menu styles */
+.menu-detail {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+    text-align: left;
+    user-select: none;
+}
+
+.item-details {
+    max-width: 40%;
+}
+
+.item-details h3 {
+    font-size: 14px;
+    color: var(--primary-color-rust);
+}
+
+.item-details p {
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.item-details span {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.menu-item img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+/* Media query for 900px */
+@media (max-width: 900px) {
+    .menu-detail {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .menu-item img {
+        width: 100px;
+        height: 100px;
+    }
+    .item-details h3 {
+        font-size: 16px;
+    }
+    .item-details p,
+    .item-details span {
+        font-size: 13px;
+    }
+}
+
+/* Media query for 768px */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    .back-link {
+        transform: translate(10px, 20px);
+        width: 30px;
+        height: 30px;
+    }
+
+    .back-link i {
+        font-size: 14px;
+    }
+
+    .menu-detail {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-item {
+        margin-bottom: 50px;
+    }
+
+    .menu-item img {
+        width: 120px;
+        height: 120px;
+        margin: 0 0 10px 0;
+    }
+    .item-details {
+        max-width: 100%;
+    }
+}

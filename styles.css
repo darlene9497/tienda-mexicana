@@ -12,8 +12,6 @@
     --tertiary-color: #1d0200;
     --secondary-color-sand: #f4e1d2;
     --white-color: #ffffff;
-    --teal-color: #3a6b6f;
-    --turquoise-accent: #5eaaa8;
 }
 
 html {
@@ -262,6 +260,11 @@ header {
     margin: 12px 0;
     font-size: 20px;
     font-weight: 700;
+}
+
+.menu-section .menu-list .menu-item a {
+    color: var(--white-color);
+    text-decoration: none;
 }
 
 .menu-section .menu-list .menu-item .text {
