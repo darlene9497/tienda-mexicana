@@ -5,7 +5,8 @@
     --white-color: #ffffff;
 }
 
-h2 {
+h2, 
+h4 {
     text-align: center;
     font-family: "Pacifico", sans-serif;
     text-transform: uppercase;
