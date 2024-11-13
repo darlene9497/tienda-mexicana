@@ -9,6 +9,5 @@ function loadHTMLComponent(selector, file) {
 
 // Load navbar and footer
 document.addEventListener("DOMContentLoaded", function () {
-    loadHTMLComponent("#navbar-placeholder", "./navbar.html");
     loadHTMLComponent("#footer-placeholder", "/footer.html");
 });

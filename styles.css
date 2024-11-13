@@ -418,7 +418,7 @@ header {
 
 .contact-section .contact-form .submit-button {
     padding: 10px 25px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     background-color: var(--tertiary-color);
     color: var(--white-color);
     border-radius: 30px;
