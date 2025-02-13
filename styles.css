@@ -551,7 +551,7 @@ header {
     }
 
     .navbar #menu-open-button {
-        color: var(--white-color);
+        color: var(--primary-color-rust);
         display: block;
     }
 
@@ -678,9 +678,12 @@ header {
     .contact-section, 
     .testimonials-section, 
     .gallery-section,
-    .menu-section,
-    .about-section {
+    .menu-section {
         padding-top: 0;
+    }
+
+    .about-section {
+        padding-top: 35px;
     }
 
     .contact-section, 
