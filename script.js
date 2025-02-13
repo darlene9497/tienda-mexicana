@@ -1,6 +1,8 @@
 const navLinks = document.querySelectorAll(".nav-menu .nav-link");
 const menuOpenButton = document.querySelector("#menu-open-button");
 const menuCloseButton = document.querySelector("#menu-close-button");
+const navbar = document.querySelector(".navbar");
+const heroSection = document.querySelector(".hero-section");
 
 // Toggle the 'menu-open' class when the menu open button is clicked.
 menuOpenButton.addEventListener("click", () => {
@@ -18,6 +20,16 @@ navLinks.forEach(link => {
     link.addEventListener("click", () => {
         document.body.classList.remove("menu-open");
     });
+});
+
+// Function to handle navbar background change on scroll
+window.addEventListener("scroll", () => {
+    const heroBottom = heroSection.offsetHeight;
+    if (window.scrollY > heroBottom) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
 });
 
 // Initialize Swiper

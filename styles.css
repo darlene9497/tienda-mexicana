@@ -61,8 +61,8 @@ button {
 header {
     position: fixed;
     width: 100%;
-    z-index: 5;
-    background-color: var(--primary-color-rust);
+    top: 0;
+    z-index: 1001;
 }
 
 .navbar {
@@ -70,6 +70,18 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: transparent;
+}
+
+.navbar.scrolled {
+    background-color: var(--white-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled .nav-link {
+    color: var(--primary-color-rust) !important;
 }
 
 .navbar .logo {
@@ -87,11 +99,12 @@ header {
     border-radius: 30px;
     font-size: 12px;
     transition: 0.3s ease;
+    font-weight: bold;
 }
 
 .navbar .nav-menu .nav-link:hover {
-    color: var(--secondary-color-sand);
-    background-color: var(--tertiary-color);
+    color: var(--tertiary-color);
+    background-color: var(--white-color);
 }
 
 .navbar .nav-menu #menu-close-button {
@@ -104,8 +117,24 @@ header {
 
 /* hero section styles */
 .hero-section {
-    background-color: var(--primary-color-rust);
-    min-height: 100vh;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('https://i.pinimg.com/736x/ab/43/8e/ab438ed85af6851eb6ad2a6561f8ac4a.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
 }
 
 .hero-section .section-content {
@@ -116,10 +145,14 @@ header {
     color: var(--white-color);
 }
 
+.hero-details {
+    position: relative;
+    z-index: 2;
+}
+
 .hero-section .hero-details .title {
     font-family: "Pacifico", sans-serif;
-    font-size: 30px;
-    color: var(--tertiary-color);
+    font-size: 40px;
 }
 
 .hero-section .hero-details .subtitle {
@@ -129,24 +162,24 @@ header {
 }
 
 .hero-section .hero-details .description {
-    max-width: 90%;
-    margin: 24px 0 40px;
+    margin: 30px 0;
     font-size: 14px;
     line-height: 2;
 }
 
 .hero-section .hero-details .hero-buttons {
     display: flex;
-    gap: 25px;
+    justify-content: center;
+    gap: 30px;
 }
 
 .hero-section .hero-details .button {
-    padding: 10px 20px;
+    padding: 10px 30px;
     background-color: var(--tertiary-color);
     color: var(--primary-color-rust);
-    border-radius: 30px;
+    border-radius: 10px;
     border: 1px solid transparent;
-    font-weight: 500;
+    font-weight: bold;
     transition: 0.3s ease;
     font-size: 12px;
 }
@@ -163,17 +196,6 @@ header {
     color: var(--primary-color-rust);
     border: var(--secondary-color-sand);
 }
-
-.hero-section .hero-image-wrapper {
-    margin-right: 30px;
-}
-
-.hero-section .hero-image-wrapper .hero-img {
-    width: 400px;
-    height: 420px;
-    object-fit: contain;
-}
-
 
 /* about section styles */
 .about-section {
@@ -273,7 +295,7 @@ header {
 }
 
 .menu-section .menu-list .menu-item .menu-img {
-    width: 200px;
+    width: 160px;
     height: 200px;
     object-fit: contain;
     margin-bottom: 15px;
@@ -281,6 +303,7 @@ header {
 
 /* testimonials section styles */
 .testimonials-section {
+    position: relative;
     padding: 20px 0 100px;
     background: var(--secondary-color-sand);
 }
@@ -341,7 +364,8 @@ header {
 .gallery-section .gallery-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px;
+    margin-left: 40px;
 }
 
 .gallery-section .gallery-list .gallery-item {
@@ -418,7 +442,6 @@ header {
 
 .contact-section .contact-form .submit-button {
     padding: 10px 25px;
-    /* margin-top: 10px; */
     background-color: var(--tertiary-color);
     color: var(--white-color);
     border-radius: 30px;
@@ -581,16 +604,6 @@ header {
 
     .hero-section .hero-details .hero-buttons {
         justify-content: center;
-    }
-
-    .hero-section .hero-image-wrapper {
-        min-width: 270px;
-        margin-right: 0;
-    }
-
-    .hero-section .hero-image-wrapper .hero-img {
-        width: 250px;
-        height: 280px;
     }
 
     .about-section .section-content {
