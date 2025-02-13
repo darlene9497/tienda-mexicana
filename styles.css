@@ -667,6 +667,10 @@ header {
         width: 100%;
     }
 
+    .gallery-section .gallery-list {
+        margin-left: 0;
+    }
+
     .testimonials-section .slider-wrapper {
         margin: 0 0 30px;
     }
