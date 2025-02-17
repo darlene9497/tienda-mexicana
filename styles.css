@@ -99,7 +99,6 @@ header {
     border-radius: 30px;
     font-size: 12px;
     transition: 0.3s ease;
-    font-weight: bold;
 }
 
 .navbar .nav-menu .nav-link:hover {
@@ -276,7 +275,17 @@ header {
     flex-direction: column;
     justify-content: space-between;
     width: calc(100% / 3 - 110px);
+    min-height: 450px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease; 
 }
+
+.menu-section .menu-list .menu-item:hover {
+    transform: translateY(-20px);
+}
+
 
 .menu-section .menu-list .name {
     margin: 12px 0;
@@ -295,8 +304,8 @@ header {
 }
 
 .menu-section .menu-list .menu-item .menu-img {
-    width: 160px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: contain;
     margin-bottom: 15px;
 }
@@ -320,6 +329,10 @@ header {
     padding: 15px;
     text-align: center;
     user-select: none;
+}
+
+.testimonials-section .testimonial:hover {
+    transform: translateY(20px);
 }
 
 .testimonials-section .testimonial .user-img {
